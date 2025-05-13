@@ -49,6 +49,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        PCPW: PCPW {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(D) &kp N &kp A &kp W &kp O &kp D &kp E &kp N1 &kp N2 &kp N3 &kp RET>;
+            label = "PCPW";
+        };
     };
 
     behaviors {
@@ -201,7 +208,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp RIGHT_ALT  &lt 3 INT_HENKAN  &lt 1 SPACE  &lt 3 TAB                    &kp BACKSPACE  &kp ENTER                                 &kp ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_1 {
@@ -228,7 +235,7 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE  &trans         &trans          &trans            &kp LC(LG(LS(T)))                                &kp F6  &kp F7            &kp F8  &kp LC(MINUS)      &kp LC(EQUAL)
+&kp ESCAPE  &trans         &trans          &trans            &kp LC(LG(LS(T)))                                &PCPW   &kp F7            &kp F8  &kp LC(MINUS)      &kp LC(EQUAL)
 &kp LC(A)   &kp LS(LG(S))  &kp DOWN_ARROW  &kp LC(LS(F1))    &kp END            &trans                &trans  &trans  &trans            &trans  &kp LG(MINUS)      &kp LG(EQUAL)
 &trans      &trans         &trans          &trans            &kp LC(LS(V))      &trans                &trans  &trans  &kp LC(LG(LEFT))  &trans  &kp LC(LG(RIGHT))  &trans
 &trans      &trans         &trans          &lt 3 INT_HENKAN  &lt 0 SPACE        &lt 5 INT_MUHENKAN            &trans  &lt 5 T                                                     &trans
