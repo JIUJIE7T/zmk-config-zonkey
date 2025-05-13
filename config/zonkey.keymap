@@ -230,7 +230,7 @@
 &trans   &kp HOME  &kp END  &kp RCTRL  &kp RIGHT_GUI  &kp RIGHT_ALT               &trans        &trans                                                              &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(SPACE) LC(SPACE)>;
+            sensor-bindings = <&inc_dec_kp LG(SPACE) LG(LS(SPACE))>;
         };
 
         layer_3 {
@@ -252,7 +252,7 @@
 &bt BT_CLR_ALL  &trans         &trans         &trans         &trans         &trans                 &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_5 {
@@ -263,7 +263,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans            &trans        &trans                                                  &bt BT_CLR_ALL
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
@@ -274,7 +274,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
