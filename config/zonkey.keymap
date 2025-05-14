@@ -219,7 +219,7 @@
 &kp ESCAPE    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LC(LS(X))  &trans     &trans                        &kp LEFT_GUI  &kp LA(GRAVE)                                           &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp MINUS LC(EQUAL)>;
+            sensor-bindings = <&inc_dec_kp MINUS EQUAL>;
         };
 
         layer_2 {
